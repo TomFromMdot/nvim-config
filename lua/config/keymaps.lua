@@ -18,3 +18,7 @@ vim.keymap.set("n", "<F12>", "<cmd>lua require'dap'.step_out()<CR>", { noremap =
 vim.keymap.set("n", "<Leader>db", "<cmd>lua require'dap'.toggle_breakpoint()<CR>", { noremap = true, silent = true })
 vim.keymap.set("n", "<Leader>dr", "<cmd>lua require'dap'.repl.open()<CR>", { noremap = true, silent = true })
 vim.keymap.set("n", "<Leader>dl", "<cmd>lua require'dap'.run_last()<CR>", { noremap = true, silent = true })
+vim.keymap.set("n", "<C-h>", require("tmux").move_left)
+vim.keymap.set("n", "<C-j>", require("tmux").move_bottom)
+vim.keymap.set("n", "<C-k>", require("tmux").move_top)
+vim.keymap.set("n", "<C-l>", require("tmux").move_right)
